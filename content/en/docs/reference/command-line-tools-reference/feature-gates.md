@@ -209,7 +209,7 @@ For a reference to old feature gates that are removed, please refer to
 | `TopologyManagerPolicyBetaOptions` | `true` | Beta | 1.28 | |
 | `TopologyManagerPolicyOptions` | `false` | Alpha | 1.26 | 1.27 |
 | `TopologyManagerPolicyOptions` | `true` | Beta | 1.28 | |
-| `UnauthenticatedHTTP2DOSMitigation` | `false` | Beta | 1.28 | |
+| `UnauthenticatedHTTP2DOSMitigation` | `true` | Beta | 1.29 | |
 | `UnknownVersionInteroperabilityProxy` | `false` | Alpha | 1.28 | |
 | `UserNamespacesSupport` | `false` | Alpha | 1.28 | |
 | `ValidatingAdmissionPolicy` | `false` | Alpha | 1.26 | 1.27 |
@@ -721,7 +721,7 @@ Each feature gate is designed for enabling/disabling a specific feature:
   which benefits to reduce the useless requeueing.
   The scheduler retries scheduling pods if something changes in the cluster that could make the pod scheduled.
   Queueing hints are internal signals that allow the scheduler to filter the changes in the cluster
-  that are relevant to the unscheduled pod, based on previous scheduling attempts.  
+  that are relevant to the unscheduled pod, based on previous scheduling attempts.
 - `SeccompDefault`: Enables the use of `RuntimeDefault` as the default seccomp profile
   for all workloads.
   The seccomp profile is specified in the `securityContext` of a Pod and/or a Container.
